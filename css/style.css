@@ -10,11 +10,11 @@ header {
   background-color: #8d6a9f;
   padding: 10px 40px;
   border-radius: 7px;
+  text-align: center;
 }
 
 header img {
   width: 200px;
-  float: right;
 }
 main {
   margin: 40px 25px 40px 25px;
