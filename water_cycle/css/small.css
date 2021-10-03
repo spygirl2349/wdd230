@@ -20,7 +20,7 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: 0.5rem 2%;
-  background-color: #ddd;
+  background-color: #88527f;
 }
 header img {
   float: left;
@@ -39,7 +39,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
+  background-color: #6b9ac4;
 }
 nav ul {
   list-style-type: none;
@@ -57,8 +57,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #aaa;
-  color: #333;
+  background-color: #88527f;
+  color: #fff;
 }
 nav ul li.active a {
   background-color: #000;
@@ -72,9 +72,17 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
+  background-color: #6b9ac4;
   padding: 0.5rem 2%;
   text-align: center;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+
+footer a:visited {
+  color: #ccc;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
