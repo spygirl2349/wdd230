@@ -6,9 +6,6 @@
   nav ul {
     flex-wrap: nowrap;
   }
-  .persona-grid {
-    display: grid;
-  }
 
   .persona-1 {
     float: left;
