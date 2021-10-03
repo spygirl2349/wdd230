@@ -29,7 +29,8 @@ header h1 {
 /* nav */
 nav ul {
   background-color: #2ea7e0;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -37,6 +38,7 @@ nav ul {
 
 nav ul li {
   list-style: none;
+  flex: 1 1 100%;
   text-align: center;
 }
 
@@ -58,12 +60,14 @@ nav a:hover {
 
 main {
   margin-left: 20px;
+  margin-right: 20px;
 }
 main img {
   max-width: 250px;
 }
 
-p {
+p,
+li {
   font-family: "Lato", sans-serif;
 }
 
@@ -71,21 +75,4 @@ h1,
 h2,
 h3 {
   font-family: "Gluten", cursive;
-}
-
-/* persona grid */
-
-.persona-grid {
-  display: flex;
-  clear: both;
-}
-
-.persona-1 {
-  float: left;
-  display: grid;
-}
-
-.persona-2 {
-  float: right;
-  display: grid;
 }

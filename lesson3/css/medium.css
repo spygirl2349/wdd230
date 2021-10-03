@@ -1,6 +1,21 @@
 @media (min-width: 37.5em) {
-  nav ul {
+  /*nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  }*/
+  nav ul {
+    flex-wrap: nowrap;
+  }
+  .persona-grid {
+    display: grid;
+  }
+
+  .persona-1 {
+    float: left;
+    margin-right: 25px;
+  }
+
+  .persona-2 {
+    float: center;
   }
 }
