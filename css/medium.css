@@ -1,4 +1,7 @@
 @media (min-width: 32.5em) {
+  body {
+    margin-left: 50px;
+  }
   header img {
     float: right;
   }

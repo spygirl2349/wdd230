@@ -16,7 +16,6 @@ header {
 }
 header img {
   width: 100px;
-  flex: 0.5;
 }
 
 header div.title {
@@ -27,7 +26,13 @@ header h1,
 header h2 {
   margin: 0;
 }
+header h1 {
+  font-size: 1.25rem;
+}
 
+header h2 {
+  font-size: 1rem;
+}
 /* Nav */
 nav button {
   margin: 0.2rem 2%;
