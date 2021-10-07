@@ -1,0 +1,23 @@
+@media (min-width: 37.5em) {
+  /*----------- BODY --------------*/
+
+  /*----------- HEADER --------------*/
+
+  /*----------- NAVIGATION --------------*/
+  nav {
+    margin: 0 auto;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul {
+    flex-wrap: nowrap;
+  }
+
+  /*----------- MAIN --------------*/
+
+  /*----------- FOOTER --------------*/
+} /* end of media query */
