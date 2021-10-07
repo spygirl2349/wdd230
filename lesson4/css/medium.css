@@ -5,6 +5,13 @@
   header img {
     width: 150px;
   }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
 
   /*----------- NAVIGATION --------------*/
   nav {
