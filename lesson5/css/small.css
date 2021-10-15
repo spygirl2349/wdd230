@@ -10,6 +10,11 @@ footer {
   padding: 20px;
   background-color: #ffffff;
 }
+#banner {
+  background-color: #b48eae;
+  padding: 10px;
+  text-align: center;
+}
 
 /*----------- HEADER --------------*/
 header {
@@ -72,11 +77,11 @@ nav ul li a {
   padding: 0.75rem;
 }
 nav ul li a:hover {
-  background-color: #135b7c;
+  background-color: #648381;
   color: white;
 }
 nav ul li a.active {
-  background-color: #135b7c;
+  background-color: #1f2f16; /*135b7c */
   color: white;
 }
 nav ul.hide {
@@ -84,6 +89,9 @@ nav ul.hide {
 }
 
 /*----------- MAIN --------------*/
+img {
+  width: 100%;
+}
 h1,
 h2,
 h3 {
@@ -96,14 +104,18 @@ p {
 
 main div {
   font-family: "Lato", sans-serif;
-  background-color: #b48eae;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 3px;
 }
 
 .hero-div img {
   max-width: 100%;
+}
+
+.hero-div div {
+  padding: 10px;
+}
+
+div.five-day {
+  display: none;
 }
 
 /*----------- FOOTER --------------*/
