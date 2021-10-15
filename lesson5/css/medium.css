@@ -1,0 +1,33 @@
+@media (min-width: 37.5em) {
+  /*----------- BODY --------------*/
+
+  /*----------- HEADER --------------*/
+  header img {
+    width: 150px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
+
+  /*----------- NAVIGATION --------------*/
+  nav {
+    margin: 0 auto;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul {
+    flex-wrap: nowrap;
+  }
+
+  /*----------- MAIN --------------*/
+
+  /*----------- FOOTER --------------*/
+} /* end of media query */
