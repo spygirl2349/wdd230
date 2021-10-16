@@ -43,8 +43,16 @@
     margin-left: 10px;
   }
 
+  div.article {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   div.article img {
-    float: right;
+    width: 35%;
+    height: auto;
+  }
+  div.article p {
+    flex: 1;
   }
 
   div.five-day {
@@ -89,9 +97,12 @@
     grid-column: 2;
   }
 
-  iframe {
-    width: 800;
+  div.map {
     grid-column: 3;
+    grid-row: 2;
+  }
+  div.map iframe {
+    height: 100%;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
