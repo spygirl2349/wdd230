@@ -75,5 +75,23 @@
     width: 100%;
   }
 
+  div.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+  }
+
+  div.address {
+    grid-column: 1;
+  }
+
+  div.contact {
+    grid-column: 2;
+  }
+
+  iframe {
+    width: 800;
+    grid-column: 3;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */

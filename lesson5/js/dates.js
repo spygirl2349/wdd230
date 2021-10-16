@@ -25,4 +25,7 @@ newP.textContent = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday
 if (day == 5){
     banner.append(newP);
 }
+else {
+    banner.classList("")
+}
 

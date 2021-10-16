@@ -117,6 +117,25 @@ main div {
 div.five-day {
   display: none;
 }
+div.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+div.address {
+  grid-column: 1;
+}
+
+div.contact {
+  grid-column: 2;
+}
+
+iframe {
+  width: 100%;
+  grid-row: 2;
+  column-span: all;
+}
 
 /*----------- FOOTER --------------*/
 footer {
