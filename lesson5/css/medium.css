@@ -43,21 +43,15 @@
     margin-left: 10px;
   }
 
-  div.article {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  div.article img {
-    width: 35%;
-    height: auto;
-  }
-  div.article p {
-    flex: 1;
+  .article-img {
+    float: right;
+    width: 50%;
   }
 
   div.five-day {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
   }
 
   div.five-day h2 {
@@ -68,13 +62,14 @@
   div.five-day div {
     grid-row: 2;
     text-align: center;
-    background-color: lavender;
-    margin: 0px 10px;
+    margin: 0px;
     padding: 0px;
+    border: 2px solid black;
+    border-radius: 5px;
   }
 
   div.five-day h5 {
-    background-color: lightblue;
+    background-color: #b48eae;
     margin: 0px;
     padding: 20px;
   }

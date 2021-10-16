@@ -15,6 +15,9 @@ footer {
   padding: 10px;
   text-align: center;
 }
+.go-away {
+  display: none;
+}
 
 /*----------- HEADER --------------*/
 header {
@@ -77,11 +80,11 @@ nav ul li a {
   padding: 0.75rem;
 }
 nav ul li a:hover {
-  background-color: #648381;
+  background-color: #324376;
   color: white;
 }
 nav ul li a.active {
-  background-color: #1f2f16; /*135b7c */
+  background-color: #324376; /*135b7c */
   color: white;
 }
 nav ul.hide {

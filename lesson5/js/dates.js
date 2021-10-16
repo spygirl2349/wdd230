@@ -26,6 +26,6 @@ if (day == 5){
     banner.append(newP);
 }
 else {
-    banner.classList("")
+    banner.classList.toggle("go-away")
 }
 
