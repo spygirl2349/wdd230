@@ -111,6 +111,7 @@ main div {
 
 .hero-div img {
   max-width: 100%;
+  display: block;
 }
 
 .hero-div div {
