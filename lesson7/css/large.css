@@ -39,8 +39,14 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  div.gallery-grid img:hover {
+  div.gallery-grid figure:hover {
     box-shadow: 0 0 40px #525252;
+    transition: box-shadow 0.2s;
   }
+
+  div.gallery-grid figcaption {
+    font-size: 1rem;
+  }
+
   /*----------- FOOTER --------------*/
 } /* end of media query */

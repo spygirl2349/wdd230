@@ -102,8 +102,19 @@
   div.gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
   }
 
+  div.gallery-grid figure {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  div.gallery-grid img {
+    border-radius: 5px;
+  }
   /* div.gallery-grid img {
     width: 300px;
   } */

@@ -153,6 +153,12 @@ div.gallery-grid {
   grid-template-columns: 1fr;
   grid-gap: 10px;
 }
+
+div.gallery-grid figcaption {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
 /*----------- FOOTER --------------*/
 footer {
   font-size: 0.8rem;
