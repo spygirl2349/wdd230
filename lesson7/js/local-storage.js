@@ -20,7 +20,7 @@ if (!lastVisit || !daysBtwn) {
     pGallery.textContent = "Welcome, new user!";
 } 
 else if (daysBtwn < 1) {
-    pGallery.textContent = "Welcome back!";
+    pGallery.textContent = "Welcome back! It's been 0 days since your last visit.";
 }
 else {
     //display the days btwn to user
