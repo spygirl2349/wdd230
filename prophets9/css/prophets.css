@@ -1,0 +1,29 @@
+h1,
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+div.cards section {
+    border: 2px solid black;
+    padding: 0px 10px;
+    background-color: #79C7C5;
+}
+
+div.cards section img {
+    width: 100%;
+    max-width: 20rem;
+}
+
+footer {
+    margin: 10px 0px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    background-color: #99D19C;
+}
