@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather for Preston, Idaho." />
+    <title>Preston Town Page - Rain, Cloud, Shine</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="../lesson3/images/favicon.ico" />
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/windchill.js"></script>
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img
+        src="../lesson3/images/rain-cloud-shine-logo.png"
+        alt="rain, cloud, shine logo"
+      />
+      <div class="title">
+        <h1>Rain, Cloud, Shine</h1>
+        <h2>Whatever the weather</h2>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html" class="active">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Preston</h1>
+      <div class="hero-div">
+        <picture>
+          <source
+            media="(min-width: 841px)"
+            srcset="images/wdd230_franklinOriginal_1200.jpg"
+          />
+          <source
+            media="(max-width: 840px) and (min-width: 441px)"
+            srcset="images/wdd230_franklinOriginal_800.jpg"
+          />
+          <source
+            media="(max-width: 440px)"
+            srcset="images/wdd230_franklinOriginal_400.jpg"
+          />
+          <img src="images/preston-hero.jpg" alt="town near forest" />
+        </picture>
+        <div>
+          <h3>Weather Summary:</h3>
+          <p>Temp: <span id="temp">45</span>&deg;F</p>
+          <p>Wind Speed: <span id="speed">60</span>mph</p>
+          <p>Wind Chill: <span id="chill"></span></p>
+          <p>Humidity: 33%<span></span></p>
+        </div>
+      </div>
+      <div class="five-day">
+        <h2>Five Day Forcast</h2>
+        <div>
+          <h5>Monday</h5>
+          <img
+            src="images/weather_clouds_night_storm_icon_250.png"
+            alt="storm clouds"
+          />
+          <p>High Temp: 45 &deg;F</p>
+        </div>
+        <div>
+          <h5>Tuesday</h5>
+          <img
+            src="images/weather_clouds_snow_icon_250.png"
+            alt="clouds with snow"
+          />
+          <p>High Temp: 25 &deg;F</p>
+        </div>
+        <div>
+          <h5>Wednesday</h5>
+          <img
+            src="images/weather_clouds_snow_icon_250.png"
+            alt="clouds with snow"
+          />
+          <p>High Temp: 30 &deg;F</p>
+        </div>
+        <div>
+          <h5>Thursday</h5>
+          <img src="images/weather_rain_storm_icon_250.png" alt="rain storm" />
+          <p>High Temp: 55 &deg;F</p>
+        </div>
+        <div>
+          <h5>Friday</h5>
+          <img src="images/weather_sunny_icon_250.png" alt="sunny" />
+          <p>High Temp: 65 &deg;F</p>
+        </div>
+      </div>
+      <h2>Hiker Article</h2>
+      <img
+        class="article-img"
+        src="images/article-hiking_525.jpg"
+        alt=" hiker and scenery"
+      />
+      <p>
+        Here is a really good paragraph about something super interesting. It
+        has something to do with the weather or the news. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Tristique magna sit amet purus gravida quis. Ac turpis egestas integer
+        eget. Aliquam sem fringilla ut morbi tincidunt augue. Amet risus nullam
+        eget felis. Egestas maecenas pharetra convallis posuere. Turpis
+        tincidunt id aliquet risus feugiat in ante metus dictum. Cursus in hac
+        habitasse platea dictumst quisque sagittis purus sit. Imperdiet sed
+        euismod nisi porta. Turpis nunc eget lorem dolor sed viverra ipsum nunc.
+        Ultricies integer quis auctor elit sed. Sit amet nisl purus in mollis
+        nunc. Here is a really good paragraph about something super interesting.
+        It has something to do with the weather or the news. Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Tristique magna sit amet purus gravida quis. Ac turpis egestas integer
+        eget. Aliquam sem fringilla ut morbi tincidunt augue. Amet risus nullam
+        eget felis. Egestas maecenas pharetra convallis posuere. Turpis
+        tincidunt id aliquet risus feugiat in ante metus dictum. Cursus in hac
+        habitasse platea dictumst quisque sagittis purus sit. Imperdiet sed
+        euismod nisi porta. Turpis nunc eget lorem dolor sed viverra ipsum nunc.
+        Ultricies integer quis auctor elit sed. Sit amet nisl purus in mollis
+        nunc. Here is a really good paragraph about something super interesting.
+        It has something to do with the weather or the news. Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.
+      </p>
+      <div class="info-grid">
+        <h2>Contact Us</h2>
+        <div class="address">
+          <h3>Address:</h3>
+          <p>
+            Rain, Cloud, Shine Co.<br />123 Main Street<br />Preston, ID 83263
+          </p>
+        </div>
+        <div class="contact">
+          <h3>Phone:</h3>
+          <p>867-5309</p>
+          <h3>Email:</h3>
+          <p>contact@yoururl.com</p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7263021117!2d-111.91543035994968!3d42.099805285830705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634409086307!5m2!1sen!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Annabelle Ruiz &bull; <span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Gluten", "Lato"],
+        },
+      });
+    </script>
+  </body>
+</html>

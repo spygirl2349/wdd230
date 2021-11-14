@@ -5,6 +5,6 @@ const copyright = document.getElementById("copyright").textContent = new Date().
 // const time = date.getTime()
 // const lastupdate = document.getElementById("updated").textContent = updateDate + ' ' + time
 
-const date = new Date(document.lastModified)
-const formatdate = `${date.getMonth()}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
-const lastupdate = document.getElementById("updated").textContent = formatdate
+let date = new Date(document.lastModified)
+let formatdate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+let lastupdate = document.getElementById("updated").textContent = formatdate

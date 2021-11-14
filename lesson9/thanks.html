@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather for Preston, Idaho." />
+    <title>Preston Town Page - Rain, Cloud, Shine</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="../lesson3/images/favicon.ico" />
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/lazy-load.js"></script>
+    <script defer src="js/local-storage.js"></script>
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img
+        src="../lesson3/images/rain-cloud-shine-logo.png"
+        alt="rain, cloud, shine logo"
+      />
+      <div class="title">
+        <h1>Rain, Cloud, Shine</h1>
+        <h2>Whatever the weather</h2>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Storm Center</h1>
+      <p>Thank you for reporting a storm! We appreciate your input.</p>
+    </main>
+    <footer>
+      <p>&copy; Annabelle Ruiz &bull; <span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Gluten", "Lato"],
+        },
+      });
+    </script>
+  </body>
+</html>
