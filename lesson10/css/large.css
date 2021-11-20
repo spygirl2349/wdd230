@@ -1,0 +1,91 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+  main {
+    max-width: 70rem;
+    margin: auto;
+  }
+
+  /*----------- BODY --------------*/
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /*----------- HEADER --------------*/
+  header img {
+    width: 200px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  /*----------- NAVIGATION --------------*/
+  nav {
+    padding: 0 20px;
+  }
+
+  /*----------- MAIN --------------*/
+
+  div.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  div.gallery-grid figure:hover {
+    box-shadow: 0 0 40px #525252;
+    transition: box-shadow 0.2s;
+  }
+
+  div.gallery-grid figcaption {
+    font-size: 1rem;
+  }
+
+  div.towns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  div.towns section {
+    display: block;
+  }
+
+  div.events ul {
+    padding-left: 30px;
+  }
+
+  div.events ul li {
+    font-size: 1.2rem;
+    line-height: 45px;
+  }
+
+  /* --FORM-- */
+  form fieldset {
+    margin: 10px 10rem;
+  }
+
+  form input.submitB {
+    margin: 10px 20rem;
+    text-align: center;
+  }
+
+  form label.sbs {
+    padding: .4rem 0;
+  }
+
+  /*----------- FOOTER --------------*/
+}
+
+/* end of media query */

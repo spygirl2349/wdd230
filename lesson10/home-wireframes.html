@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather for Preston, Idaho." />
+    <title>Preston Town Page - Rain, Cloud, Shine</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="../lesson3/images/favicon.ico" />
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/windchill.js"></script>
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img
+        src="images/rain-cloud-shine-logo_250.png"
+        alt="rain, cloud, shine logo"
+      />
+      <div class="title">
+        <h1>Rain, Cloud, Shine</h1>
+        <h2>Whatever the weather</h2>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>Large/Desktop Wireframe</h2>
+            <img src="images/weather-home-wireframe-large.png" alt="large wireframe">
+        </div>
+        <div>
+            <h2>Medium/Tablet Wireframe</h2>
+            <p><a href="https://wireframe.cc/OOXLCl" target="_blank">wireframe.cc</a></p>
+            <img src="images/weather-home-wireframe-medium.png" alt="medium wireframe">
+        </div>
+        <div>
+            <h2>Small/Phone Wireframe</h2>
+            <p><a href="https://wireframe.cc/eUnHxj" target="_blank">wireframe.cc</a></p>
+            <img src="" alt=""></div>
+    </main>
+    <footer>
+      <p>&copy; Annabelle Ruiz &bull; <span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Gluten", "Lato"],
+        },
+      });
+    </script>
+  </body>
+</html>

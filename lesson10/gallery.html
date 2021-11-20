@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather for Preston, Idaho." />
+    <title>Preston Town Page - Rain, Cloud, Shine</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="../lesson3/images/favicon.ico" />
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/lazy-load.js"></script>
+    <script defer src="js/local-storage.js"></script>
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img
+        src="images/rain-cloud-shine-logo_250.png"
+        alt="rain, cloud, shine logo"
+      />
+      <div class="title">
+        <h1>Rain, Cloud, Shine</h1>
+        <h2>Whatever the weather</h2>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Gallery</h1>
+      <p><span id="days-btwn"></span></p>
+      <div class="gallery-grid">
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/lightning-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>Purple Lightning</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/wheat-landscape-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>Wheat Field for the years of plenty</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/ocean-mountain-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>Beautiful landscape across the lake</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/bus-winter-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>Winter Wonderland in the City</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/country-landscape-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>
+            Country meadow (AKA almost the old Windows Vista background -- Not
+            quite)
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/town-view-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>Town aerial view</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/rainbow-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>God's promise x 2</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/snow-mountain-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>The desolate winter beyond the wall</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://via.placeholder.com/500x350?text=+"
+            data-src="images/mountain-view-500x350.jpg"
+            alt="sunset"
+          />
+          <figcaption>Majestic mountain forest</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Annabelle Ruiz &bull; <span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Gluten", "Lato"],
+        },
+      });
+    </script>
+  </body>
+</html>
