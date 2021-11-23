@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather for Preston, Idaho." />
+    <title>Home - Rain, Cloud, Shine</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="images/weather-favicon.ico" />
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/towns.js"></script>
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img
+        src="images/rain-cloud-shine-logo_250.png"
+        alt="rain, cloud, shine logo"
+      />
+      <div class="title">
+        <h1>Rain, Cloud, Shine</h1>
+        <h2>Whatever the weather</h2>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Home</h1>
+      <div class="hero-div">
+        <picture>
+          <source
+            media="(min-width: 841px)"
+            srcset="images/home-1200.jpg"
+          />
+          <source
+            media="(max-width: 840px) and (min-width: 441px)"
+            srcset="images/home-800.jpg"
+          />
+          <source
+            media="(max-width: 440px)"
+            srcset="images/home-400.jpg"
+          />
+          <img src="images/preston-hero.jpg" alt="town near forest" />
+        </picture>
+      </div>
+      <div class="towns">
+      </div>
+      <h2>Events</h2>
+      <div class="events">
+        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23b48eae&ctz=America%2FDenver&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=1&showTz=0&title=Weather%20Home%20Page&src=ZTUxamk0NXFsZ2Z2bm42dHBiYWpnNzVpbmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border:solid 1px #777" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+        <ul>
+            <li>Every Saturday Morning: Pancakes at the Park in Preston</li>
+            <li>Nov 22nd: Thanksgiving in Fish Haven</li>
+            <li>Dec 7th & 24th: Christmas Stories with the Mayor in Preston</li>
+            <li>Dec 19th: Soda Springs Holiday Party</li>
+        </ul>
+      </div>
+      <div class="info-grid">
+        <h2>Contact Us</h2>
+        <div class="address">
+          <h3>Address:</h3>
+          <p>
+            Rain, Cloud, Shine Co.<br />123 Main Street<br />Preston, ID 83263
+          </p>
+        </div>
+        <div class="contact">
+          <h3>Phone:</h3>
+          <p>867-5309</p>
+          <h3>Email:</h3>
+          <p>contact@yoururl.com</p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7263021117!2d-111.91543035994968!3d42.099805285830705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634409086307!5m2!1sen!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Annabelle Ruiz &bull; <span id="currentDate"></span> &bull; <a href="home-wireframes.html">Home Wireframes</a></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Gluten", "Lato"],
+        },
+      });
+    </script>
+  </body>
+</html>

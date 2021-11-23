@@ -1,0 +1,191 @@
+@media (min-width: 37.5em) {
+
+  /*----------- BODY --------------*/
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  /*----------- HEADER --------------*/
+  header img {
+    width: 150px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
+
+  /*----------- NAVIGATION --------------*/
+  nav {
+    margin: 0 auto;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+  }
+
+  /*----------- MAIN --------------*/
+  .hero-div {
+    position: relative;
+  }
+
+  .hero-div div {
+    background-color: rgba(169, 169, 169, 0.75);
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    padding: 0px 10px 0px 20px;
+    margin-left: 10px;
+  }
+
+  .hero-div div img {
+    float: right;
+    padding-left: 10px;
+
+  }
+
+  .article-img {
+    float: right;
+    width: 50%;
+  }
+
+  div.five-day {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+
+  div.five-day h2 {
+    grid-row: 1;
+    grid-column: 1 / 3;
+  }
+
+  div.five-day div {
+    grid-row: 2;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  div.five-day h5 {
+    background-color: #b48eae;
+    margin: 0px;
+    padding: 15px;
+  }
+
+  div.five-day img {
+    width: auto;
+  }
+
+  div.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+  }
+
+  div.address {
+    grid-column: 1;
+  }
+
+  div.contact {
+    grid-column: 2;
+  }
+
+  div.map {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  div.map iframe {
+    height: 100%;
+  }
+
+  div.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  div.gallery-grid figure {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  div.gallery-grid img {
+    border-radius: 5px;
+  }
+
+  div.towns section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0px;
+  }
+
+  div.towns section img {
+    max-width: 500px;
+    width: 92%;
+  }
+
+  div.towns h2 {
+    font-size: 2rem;
+  }
+
+  div.towns section.imgr img {
+    grid-column: 2 / span all;
+  }
+
+  div.towns section.imgr div {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  div.towns section.imgl img {
+    grid-column: 1;
+  }
+
+  div.towns section.imgl div {
+    grid-column: 2;
+    grid-row: 1
+  }
+
+  div.events {
+    display: grid;
+  }
+
+  div.events ul {
+    grid-column: 2;
+    padding-left: 30px;
+    margin: 5px 0px 10px 0px;
+  }
+
+  div.events ul li {
+    font-size: 1.05rem;
+    line-height: 30px;
+  }
+
+  /*----------- FORM --------------*/
+
+  form label.comment textarea {
+    width: 92%;
+    max-width: 30rem;
+  }
+
+  /*----------- FOOTER --------------*/
+}
+
+/* end of media query */
