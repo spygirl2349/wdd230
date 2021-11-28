@@ -178,6 +178,11 @@
     line-height: 30px;
   }
 
+  div.events-div hr {
+    margin-left: 0px;
+    width: 20rem;
+  }
+
   /*----------- FORM --------------*/
 
   form label.comment textarea {

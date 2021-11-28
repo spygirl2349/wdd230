@@ -1,4 +1,19 @@
-const apiURL = '//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ae3df22411a81915e415e33bf24600fd&units=imperial';
+let townName = document.querySelector('.town-name').textContent;
+let cityId = 0
+
+switch (townName) {
+    case 'Soda Springs':
+        cityId = 5607916;
+        break;
+    case 'Fish Haven':
+        cityId = 5585000;
+        break;
+    case 'Preston':
+        cityId = 5604473;
+        break;
+}
+
+let apiURL = `//api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=ae3df22411a81915e415e33bf24600fd&units=imperial`;
 
 const mydate = new Date ();
 const todayNum = mydate.getDay();
