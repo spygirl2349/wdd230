@@ -71,7 +71,11 @@
     line-height: 45px;
   }
 
-  /* --FORM-- */
+  div.events-div {
+    margin: 0px;
+  }
+
+  /* ---------- FORM ---------- */
   form fieldset {
     margin: 10px 10rem;
   }
@@ -84,11 +88,6 @@
   form label.sbs {
     padding: .4rem 0;
   }
-
-  div.events-div {
-    margin: 0px;
-  }
-
 
 
   /*----------- FOOTER --------------*/

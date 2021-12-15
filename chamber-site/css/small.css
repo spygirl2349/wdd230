@@ -99,6 +99,11 @@ main img {
     background-color: #04724D;
     color: white;
     border: none;
+    transition: font-size .7s;
+}
+
+#join-btn:hover {
+    font-size: 1.2rem;
 
 }
 
@@ -130,6 +135,61 @@ main img {
 
 .three-day img {
     width: 20%;
+}
+
+/*----------- FORM - Join page --------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #006BA6;
+    border-radius: 7px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #006BA6;
+    margin: 0 .7rem;
+    padding: 0 .5rem;
+}
+
+form label,
+form legend,
+form input {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+form label,
+form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: .95rem;
+}
+
+form label.top input,
+form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .65rem;
+    width: 92%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+form label.sbs {
+    /* margin-left: 2%; */
+    padding: .65rem 0;
+}
+
+form input.submit {
+    border: none;
+    background-color: #006BA6;
+    color: white;
+    border-radius: .3rem;
+    padding: .76rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 25rem;
 }
 
 /*----------- FOOTER --------------*/

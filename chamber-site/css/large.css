@@ -15,6 +15,21 @@
     /*----------- MAIN --------------*/
 
 
+    /*----------- FORM - Join page --------------*/
+    form fieldset {
+        margin: 10px 10rem;
+    }
+
+    form input.submit {
+        margin: 10px 20rem;
+        text-align: center;
+    }
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+
     /*----------- FOOTER --------------*/
 
 
