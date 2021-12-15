@@ -13,7 +13,14 @@
 
 
     /*----------- MAIN --------------*/
+    div.map {
+        text-align: center;
+    }
 
+    div.map iframe {
+        margin: 10px 10rem;
+        width: 70%;
+    }
 
     /*----------- FORM - Join page --------------*/
     form fieldset {

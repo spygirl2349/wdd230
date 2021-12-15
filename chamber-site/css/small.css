@@ -13,7 +13,10 @@ footer {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
     font-family: "Noto Serif", serif;
 }
 
@@ -131,10 +134,13 @@ main img {
     grid-column: 2;
 }
 
-
-
 .three-day img {
     width: 20%;
+}
+
+div.map iframe {
+    width: 100%;
+    height: 20rem;
 }
 
 /*----------- FORM - Join page --------------*/
