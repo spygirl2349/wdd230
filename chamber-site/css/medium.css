@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) and (max-width: 64em) {
+@media only screen and (min-width: 37.5em) {
     /*----------- BODY --------------*/
 
 
@@ -7,6 +7,21 @@
 
     /*----------- NAVIGATION --------------*/
 
+    nav {
+        margin: 0 auto;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+    }
 
     /*----------- MAIN --------------*/
     div#companies section {
@@ -57,6 +72,22 @@
 
     /*----------- FOOTER --------------*/
 
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    footer div.contact {
+        grid-column: 1;
+        text-align: center;
+    }
 
+    footer div.follow {
+        grid-column: 2;
+        text-align: center;
+    }
+
+    footer p.foot {
+        grid-column: 1 / 3;
+    }
 }

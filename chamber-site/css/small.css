@@ -25,10 +25,15 @@ button {
 
 /*----------- HEADER --------------*/
 
+header img {
+    width: 75%;
+    max-width: 350px;
+}
 
 /*----------- NAVIGATION --------------*/
 nav button {
     margin: 0.2rem 2%;
+    padding: 10px 100% 10px 10px;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
@@ -77,6 +82,10 @@ nav ul.hide {
     display: none;
 }
 
+.wayfinding {
+    font-size: .75rem;
+}
+
 /*----------- MAIN --------------*/
 
 main img {
@@ -84,6 +93,8 @@ main img {
 }
 
 #join-btn {
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
     padding: 0.4rem 15%;
     background-color: #04724D;
     color: white;
@@ -128,6 +139,14 @@ footer {
     color: white;
 }
 
+footer h5 {
+    font-size: .95rem;
+}
+
+footer p {
+    font-size: .8rem;
+}
+
 footer a img {
     border-radius: 5px;
     width: 3rem;
@@ -136,4 +155,12 @@ footer a img {
 footer p.foot {
     font-size: .7rem;
     text-align: center;
+}
+
+footer p.foot a:link {
+    color: white;
+}
+
+footer p.foot a:visited {
+    color: #B2B2B2;
 }

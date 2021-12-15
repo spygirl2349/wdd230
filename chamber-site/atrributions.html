@@ -18,35 +18,51 @@
     <!-- -------SCRIPTS GO HERE------- -->
     <script defer src="js/dates.js"></script>
     <script defer src="js/nav.js"></script>
+    <script defer src="js/last-modified.js"></script>
   </head>
   <body>
     <div id="banner"></div>
     <header>
       <img
-        src=""
+        src="images/chamber-logo.jpg"
         alt="rexburg chamber of commerce logo"
       />
     </header>
     <nav>
       <button onclick="toggleMenu()">&#9776;</button>
       <ul id="primaryNav" class="hide">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="rexburg.html">Rexburg</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <p class="wayfinding">Home > Attributions & Site Plan</p>
     <main>
        <h1>Attributions</h1>
        <p>All events and companies of the month have been taken from the <a href="https://rexburgchamber.org/" target="_blank">Rexburg Area Chamber of Commerce</a>. </p>
+
+       <h1>Site Plan</h1>
+       <p><a href="other/wdd230_ChamberofComPlan.pdf">Chamber of Commerce PDF Site Plan</a></p>
+       <h3>Color Pallet</h3>
+       <!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="03997116680632289">new CoolorsPaletteWidget("03997116680632289", ["006ba6","04724d","ffffff","b2b2b2","0c0f0a","736f72"]); </script>
     </main>
     <footer>
+      <div class="contact">
         <h5>Contact:</h5>
+        <p>Rexburg Chamber of Commerce<br>167 W. Main St STE 2<br>Rexburg, ID 83440</p>
+        <p>208-867-5309</p>
+        <p>chamber@rexburg.org</p>
+    </div>
+    <div class="follow">
         <h5>Follow us on:</h5>
-        <a href=""><img src="" alt="Instagram"></a>
-        <a href=""><img src="" alt="Facebook"></a>
-      <p class="foot">&copy; Annabelle Ruiz &bull; <a href="">Attributions</a> &bull; <a href="../../wdd-other/wdd230_ChamberofComPlan.pdf">Site Plan</a></p>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagramicon.png" alt="Instagram"></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebookicon.png" alt="Facebook"></a>
+    </div>
+    <p class="foot">&copy; Annabelle Ruiz &bull; <a href="atrributions.html">Attributions & Site Plan</a> &bull; Last Modified: <span id="lastMod"></span></p>
     </footer>
 
     <!-- ---- LINK FONTS HERE ----- -->

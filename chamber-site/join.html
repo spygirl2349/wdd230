@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Home Page for Rexburg Chamber of Commerce" />
+    <title>Home - Rexburg Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" /> <!-- ---FAVICON GOES HERE --- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link family=Noto+Serif&family=Source+Sans+Pro&display href="https://fonts.googleapis.com/css2?=swap" rel="stylesheet">
+
+    <!-- -------SCRIPTS GO HERE------- -->
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/last-modified.js"></script>
+</head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img
+        src="images/chamber-logo.jpg"
+        alt="rexburg chamber of commerce logo"
+      />
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rexburg.html">Rexburg</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h1>Join the Chamber!</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Title<input type="text" name="title"></label>
+                <label>Email*<input type="email" name="email" placeholder="myemail@email.com" required></label>
+                <label>Cell Phone<input type="tel" name="tel"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business Name*<input type="text" name="bname" required></label>
+                <label>Business Address<input type="text" name="baddress"></label>
+                <label>Business Website<input type="url" name="bsite" required></label>
+                <label>Business Description<textarea></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Type</legend>
+                <label><input type="radio" name="member" value="non-profit"> Non-profit ($100)</label>
+                <label><input type="radio" name="member" value="bronze"> Bronze ($200)</label>
+                <label><input type="radio" name="member" value="silver"> Silver ($400)</label>
+                <label><input type="radio" name="member" value="gold"> Gold ($1000)</label>
+            </fieldset>
+            <input type="submit" value="Become a Member!">
+        </form>
+    </main>
+    <footer>
+        <div class="contact">
+            <h5>Contact:</h5>
+            <p>Rexburg Chamber of Commerce<br>167 W. Main St STE 2<br>Rexburg, ID 83440</p>
+            <p>208-867-5309</p>
+            <p>chamber@rexburg.org</p>
+        </div>
+        <div class="follow">
+            <h5>Follow us on:</h5>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagramicon.png" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebookicon.png" alt="Facebook"></a>
+        </div>
+        <p class="foot">&copy; Annabelle Ruiz &bull; <a href="atrributions.html">Attributions & Site Plan</a> &bull; Last Modified: <span id="lastMod"></span></p>
+    </footer>    
+</body>
+</html>
