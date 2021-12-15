@@ -9,7 +9,51 @@
 
 
     /*----------- MAIN --------------*/
+    div#companies section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 15px 0px;
+    }
 
+    div#companies h3,
+    div#companies p {
+        margin: 0px;
+    }
+
+    div#companies .imgr img {
+        grid-column: 2;
+        grid-row: span 2;
+    }
+
+    div#companies .imgr h3,
+    div#companies .imgr p {
+        grid-column: 1;
+    }
+
+    div#companies .imgl img {
+        grid-column: 1;
+        grid-row: span 2;
+    }
+
+    div#companies .imgl h3,
+    div#companies .imgl p {
+        grid-column: 2;
+    }
+
+    div#companies h3 {
+        grid-row: 1;
+    }
+
+    div#companies p {
+        grid-row: 2;
+    }
+
+    .three-day {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
 
     /*----------- FOOTER --------------*/
 

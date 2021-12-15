@@ -11,10 +11,15 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <link rel="shortcut icon" href="images/favicon.ico" /> <!-- ---FAVICON GOES HERE --- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link family=Noto+Serif&family=Source+Sans+Pro&display href="https://fonts.googleapis.com/css2?=swap" rel="stylesheet">
 
     <!-- -------SCRIPTS GO HERE------- -->
     <script defer src="js/dates.js"></script>
-  </head>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/weather.js"></script>
+</head>
   <body>
     <div id="banner"></div>
     <header>
@@ -38,48 +43,54 @@
             <source media="" srcset="">
             <source media="" srcset="">
             <source media="" srcset="">
-            <img src="" alt="">
+            <img src="images/pexels-august-de-richelieu-4427430.jpg" alt="">
         </picture>
         <h2>Chamber Purpose</h2>
-        <p></p>
+        <p>The purpose of the site is to promote Rexburg businesses and to learn more about business topics. By joining the chamber of commerce, one will be able to access a network of people to help one’s company. The chamber of commerce will also contain some history of Rexburg.</p>
         <h4>Become a member of our chamber!</h4>
-        <button>Join Now</button>
+        <a id= "join-btn">Join Now</a>
         <h2>Upcoming Events</h2>
         <ul></ul>
-        <h2>Rexburg Companies of the Month</h2>
+        <h2>Rexburg Buisnesses of the Month</h2>
         <div id="companies">
-            <img src="" alt="">
-            <h3>Company 1</h3>
-            <p></p>
-            <img src="" alt="">
-            <h3>Company 2</h3>
-            <p></p>
-            <img src="" alt="">
-            <h3>Company 3</h3>
-            <p></p>
+            <section class="imgr">
+                <img src="images/pexels-elle-hughes-2696064.jpg" alt="man and woman cooking professionally">
+                <h3>Basic Amercian Foods</h3>
+                <p>Basic American Foods believes that kitchens and dining rooms should be filled with food people love to make and love to eat. It is exactly why they help create a world full of mealtime victories. According to them, their values are more than words on a page; they are words that guide and tie them together. They seek to make real food heroes every day by providing customers with foods that are delicious to eat, easy to prepare, and accessible to all.</p>
+            </section>
+            <section class="imgl">
+                <img src="images/pexels-fauxels-3184360.jpg" alt="">
+                <h3>Bear Lite Media</h3>
+                <p>Bear Lite Media Offers: Coaching for small business owners to help them successfully reach their business plan, and workshops that can be taught on an individual and group basis. A pleasant place easy to access. Staff has 20 plus years of experience helping people help themselves.</p>
+            </section>
+            <section class="imgr">
+                <img src="images/pexels-rodnae-productions-7821714.jpg" alt="">
+                <h3>D.L. Evans Bank</h3>
+                <p>D.L. Evans Bank has been family owned since 1904, delivering the best banking solutions with attentive, friendly service from over 37 convenient locations. From checking and savings accounts to mortgages and loans, our Rexburg branch located at 500 North 2nd East is available to help you with all of your banking needs. A community bank is fertile financial resources turned back in local soil, and while times have changed, the Bank has never lost sight of the owner’s vision, “That banking is really just about one thing: helping people.” We are D.L. Evans Bank and this is community banking.</p>
+            </section>
         </div>
-        <div id="weather">
-            <div>Current Weather Goes Here</div>
+        <div>
+            <div id="currentW"></div>
             <h3>Three-Day Forecast</h3>
-            <div>Day 1</div>
-            <div>Day 2</div>
-            <div>Day 3</div>
+            <div class="three-day"></div>
         </div>
     </main>
     <footer>
         <h5>Contact:</h5>
         <h5>Follow us on:</h5>
-        <a href=""><img src="" alt="Instagram"></a>
-        <a href=""><img src="" alt="Facebook"></a>
-      <p>&copy; Annabelle Ruiz &bull; <span id="currentDate"></span> &bull; <a href="../../wdd-other/wdd230_ChamberofComPlan.pdf">Site Plan</a></p>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagramicon.png" alt="Instagram"></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebookicon.png" alt="Facebook"></a>
+      <p class="foot">&copy; Annabelle Ruiz &bull; <a href="atrributions.html">Attributions</a> &bull; <a href="../../wdd-other/wdd230_ChamberofComPlan.pdf">Site Plan</a></p>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- ---- LINK FONTS HERE ----- -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({
         google: {
           families: ["Gluten", "Lato"],
         },
       });
-    </script>
+    </script> -->
   </body>
 </html>
