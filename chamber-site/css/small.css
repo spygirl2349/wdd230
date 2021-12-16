@@ -30,6 +30,18 @@ button {
 }
 
 /*----------- HEADER --------------*/
+#xbtn {
+    border: none;
+    background-color: #006BA6;
+    color: white;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+#banner p {
+    padding: 10px;
+}
 
 header img {
     width: 75%;

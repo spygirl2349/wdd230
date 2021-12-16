@@ -69,12 +69,38 @@ fetch (apiURL)
         }        
     })
 
-    //WEATHER ALERT
+//WEATHER ALERT
 
-    let alertApi = "https://api.openweathermap.org/data/2.5/onecall?lat=43.82&lon=-111.78&exclude=current,minutely,hourly,daily&appid=ae3df22411a81915e415e33bf24600fd"
+let alertApi = "https://api.openweathermap.org/data/2.5/onecall?lat=43.82&lon=-111.78&exclude=current,minutely,hourly,daily&appid=ae3df22411a81915e415e33bf24600fd"
 
-    fetch (alertApi)
-        .then ((response)=> response.json())
-        .then ((alert) => {
-            console.log(alert)
-        })
+let banner = document.getElementById("banner");
+let newP = document.createElement("p");
+let button = document.createElement("button");
+
+button.textContent = "X";
+button.setAttribute("onclick", "closeBanner()")
+button.id = "xbtn"
+
+        
+fetch (alertApi)
+    .then ((response)=> response.json())
+    .then ((jsAlert) => {
+        console.log(jsAlert)
+
+        // //testing banner here
+        // newP.textContent = "Hello this is a test!"
+        // banner.append(newP);
+        // banner.append(button);
+
+        if (jsAlert.alert != null) {
+            newP.textContent = jsAlert.alerts.description
+
+            banner.append(newP);
+            banner.append(button);
+        }
+    })
+
+function closeBanner () {
+    newP.remove();
+    button.remove();
+};
