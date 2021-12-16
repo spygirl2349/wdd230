@@ -4,7 +4,11 @@ body {
 
 }
 
-header,
+header {
+    background-color: #B2B2B2;
+    padding: 20px;
+}
+
 main,
 footer {
     background-color: #ffffff;
@@ -76,7 +80,7 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    background-color: #B2B2B2;
+    background-color: #F4BC33;
     color: black;
 }
 

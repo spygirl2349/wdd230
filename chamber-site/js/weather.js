@@ -41,7 +41,7 @@ fetch (apiURL)
 
         for (i=0; i < mylist.length; i++) {
         var time = mylist[i].dt_txt;
-        if (time.includes('18:00:00')) {
+        if (time.includes('18:00:00') && i <= 21) {
             let theDayName = document.createElement('h5');
             let theTemp = document.createElement("p");
     
@@ -66,7 +66,15 @@ fetch (apiURL)
             forecastDayNum = 0;
             }
         }
-        }
-
-        
+        }        
     })
+
+    //WEATHER ALERT
+
+    let alertApi = "https://api.openweathermap.org/data/2.5/onecall?lat=43.82&lon=-111.78&exclude=current,minutely,hourly,daily&appid=ae3df22411a81915e415e33bf24600fd"
+
+    fetch (alertApi)
+        .then ((response)=> response.json())
+        .then ((alert) => {
+            console.log(alert)
+        })

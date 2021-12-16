@@ -1,0 +1,12 @@
+{
+    "business1" : {
+        "contact_info": "myemail@gmail.com",
+        "logo_src": "logo.png",
+        "web_url": "https://google.com"
+    },
+    "business2": {
+        "contact_info": "myemail@gmail.com",
+        "logo_src": "logo.png",
+        "web_url": "https://google.com"
+    }
+}
