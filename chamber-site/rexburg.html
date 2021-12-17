@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The Home Page for Rexburg Chamber of Commerce" />
-    <title>Join - Rexburg Chamber of Commerce</title>
+    <title>Rexburg - Rexburg Chamber of Commerce</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -16,7 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- -------SCRIPTS GO HERE------- -->
     <script defer src="js/nav.js"></script>
+    <script defer src="js/weather.js"></script>
     <script defer src="js/last-modified.js"></script>
+    <script defer src="js/lazy-load.js"></script>
 </head>
   <body>
     <div id="banner"></div>
@@ -30,15 +32,41 @@
       <button onclick="toggleMenu()">&#9776;</button>
       <ul id="primaryNav" class="hide">
         <li><a href="index.html">Home</a></li>
-        <li><a href="rexburg.html">Rexburg</a></li>
-        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="rexburg.html" class="active">Rexburg</a></li>
+        <li><a href="join.html">Join</a></li>
         <li><a href="direct.html">Directory</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main>
-        <h1>Congratulations!</h1>
-        <p>Welcome new member! Thank you for joining the Chamber.</p>
+    <main id="home">
+        <div class="main-content1">
+            <h2>Rexburg City</h2>
+            <picture>
+                <source media="" srcset="">
+                <source media="" srcset="">
+                <source media="" srcset="">
+                <img src="images/1024px-Rexburg_Idaho_Temple_at_Sunset_2009.jpeg" alt="Rexburg, Idaho Temple">
+            </picture>
+            
+            
+            </div>
+        </div>
+        <aside class="one">
+            <h3>Become a member of our chamber!</h3>
+            <a href= "join.html" id= "join-btn">Join Now</a>
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Dec 13th- 18th - RCT: “A Christmas Carol”</li>
+                <li>Jan 11th - Annual Membership Meeting</li>
+                <li>Jan 20th - Gold's Gym Business After Hours</li>
+                <li>Jan 28th - Beehive Federal Credit Union After Hours</li>
+            </ul>
+            <div>
+                <div id="currentW"></div>
+                <h3>Three-Day Forecast</h3>
+                <div class="three-day"></div>
+            </div>
+        </aside>
     </main>
     <footer>
         <div class="contact">
@@ -52,7 +80,7 @@
             <a href="https://instagram.com" target="_blank"><img src="images/instagramicon.png" alt="Instagram"></a>
             <a href="https://facebook.com" target="_blank"><img src="images/facebookicon.png" alt="Facebook"></a>
         </div>
-        <p class="foot">&copy; Annabelle Ruiz &bull; <a href="atrributions.html">Attributions & Site Plan</a> &bull; Last Modified: <span id="lastMod"></span></p>
-    </footer>    
-</body>
+      <p class="foot">&copy; Annabelle Ruiz &bull; <a href="atrributions.html">Attributions & Site Plan</a> &bull; Last Modified: <span id="lastMod"></span></p>
+    </footer>
+  </body>
 </html>
