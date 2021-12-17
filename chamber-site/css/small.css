@@ -158,6 +158,32 @@ div.map iframe {
     height: 20rem;
 }
 
+#directory-b {
+    max-width: 70rem;
+}
+
+button#grid-list {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid ul li {
+    list-style: none;
+}
+
+.grid ul li:nth-child(1) {
+    font-weight: bolder;
+}
+
+.list ul li:nth-child(1) {
+    font-weight: bolder;
+    list-style: none;
+}
+
 /*----------- FORM - Join page --------------*/
 form fieldset {
     margin: 2rem 0;

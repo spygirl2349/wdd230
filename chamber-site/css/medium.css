@@ -70,6 +70,50 @@
         gap: 10px;
     }
 
+    /* directory page */
+    button#grid-list {
+        display: block;
+        background-color: #f4bc33;
+        border: none;
+        width: 10%;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    .list ul {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid black;
+        margin: 0;
+    }
+
+    .list li {
+        list-style: none;
+        padding: 10px;
+    }
+
+    .list li:nth-child(1) {
+        grid-column: 1;
+        border-right: 1px solid black;
+
+    }
+
+    .list li:nth-child(2) {
+        grid-column: 2;
+        border-right: 1px solid black;
+    }
+
+    .list li:nth-child(3) {
+        grid-column: 3;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
     /*----------- FORM - Join page --------------*/
 
 

@@ -68,6 +68,10 @@
         display: block;
     }
 
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     /*----------- FORM - Join page --------------*/
     form fieldset {
         margin: 10px 10rem;

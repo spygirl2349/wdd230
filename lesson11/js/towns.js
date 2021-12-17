@@ -16,7 +16,7 @@ fetch(townURL)
                 let card = document.createElement('section');
                 let wordDiv = document.createElement('div');
                 let h2 = document.createElement('h2');
-                let ul = document.createElement('ul') 
+                let ul = document.createElement('ul'); 
                 let founded = document.createElement('li');
                 let pop = document.createElement('li');
                 let rain = document.createElement('li');

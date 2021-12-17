@@ -1,12 +1,39 @@
 {
-    "business1" : {
-        "contact_info": "myemail@gmail.com",
-        "logo_src": "logo.png",
-        "web_url": "https://google.com"
-    },
-    "business2": {
-        "contact_info": "myemail@gmail.com",
-        "logo_src": "logo.png",
-        "web_url": "https://google.com"
-    }
+    "businesses" : [
+        {
+            "name": "Fisher's Technology",
+            "phone": "208.947.3605",
+            "web_url": "https://www.fisherstech.com/"
+        },
+        {
+            "name": "Oswald Service & Repair",
+            "phone": "208.356.7777",
+            "web_url": "https://www.oswaldserviceinc.com"
+        },
+        {
+            "name": "BYU-Idaho",
+            "phone": "208.496.1411",
+            "web_url": "http://www.byui.edu/"
+        },
+        {
+            "name": "Fat Cats of Rexburg",
+            "phone": "208.359.2600",
+            "web_url": "http://rexburg.fatcatsfun.com/"
+        },
+        {
+            "name": "Jamba Juice",
+            "phone": "208-359-9617",
+            "web_url": "https://order.jambajuice.com/menu/jamba-juice-rexburg-0255"
+        },
+        {
+            "name": "Righteous Slice",
+            "phone": "520.333.9532",
+            "web_url": "https://www.righteousslice.com/"
+        },
+        {
+            "name": "Broulim's Fresh Food",
+            "phone": "208.356.4651",
+            "web_url": "https://broulims.com/"
+        }
+    ]
 }
